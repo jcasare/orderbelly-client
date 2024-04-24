@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import NavMobile from "./NavMobile";
 
 const Header = () => {
   return (
@@ -7,6 +8,9 @@ const Header = () => {
         <Link className="logo text-1xl" to="/">
           orderBelly
         </Link>
+        <div className="md:hidden">
+          <NavMobile />
+        </div>
       </div>
     </div>
   );
